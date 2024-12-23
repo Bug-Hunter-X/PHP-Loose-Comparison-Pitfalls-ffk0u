@@ -1,0 +1,17 @@
+```php
+function my_function_strict($param) {
+  if ($param === null) {
+    return 'null'; 
+  } elseif ($param === false) {
+    return 'false';
+  } else {
+    return $param;
+  }
+}
+
+$result = my_function_strict(null); // Output: null
+$result = my_function_strict(false); // Output: false
+$result = my_function_strict(0); // Output: 0
+$result = my_function_strict(''); // Output: ""
+$result = my_function_strict([]); // Output: Array
+```
